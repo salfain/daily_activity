@@ -1,15 +1,9 @@
 import 'package:daily_activity/widgets/dosen_data.dart';
-import 'package:daily_activity/widgets/list_materi.dart';
 import 'package:flutter/material.dart';
 
-class MataKuliah extends StatefulWidget {
-  const MataKuliah({Key? key}) : super(key: key);
+class Ujian extends StatelessWidget {
+  const Ujian({Key? key}) : super(key: key);
 
-  @override
-  State<MataKuliah> createState() => _MataKuliahState();
-}
-
-class _MataKuliahState extends State<MataKuliah> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,17 +27,19 @@ class _MataKuliahState extends State<MataKuliah> {
         children: [
           dosenData(),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
-          listMateri(),
-          SizedBox(
-            height: 30,
-          ),
-          listMateri(),
-          SizedBox(
-            height: 30,
-          ),
-          listMateri()
+          Container(
+            child: Card(
+              color: Colors.white,
+              margin: EdgeInsets.only(left: 15, right: 15),
+              child: Column(
+                children: <Widget>[
+                  Text("1. Berikut pejuang proklamasi Indonesia kecuali?"),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class listMateri extends StatelessWidget {
-  final List<String> judul = ["Pengenalan CNNA", "Cara kerja CNNA"];
-  listMateri({
-    Key? key,
-  }) : super(key: key);
+  //final List<String> judul = ["Pengenalan CNNA", "Cara kerja CNNA", "APA YA"];
+
+  final name;
+
+  listMateri({required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +42,7 @@ class listMateri extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      judul.toString(),
+                      name,
                       style: TextStyle(
                           fontSize: 15,
                           fontFamily: 'Montserrat',

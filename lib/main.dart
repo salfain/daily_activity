@@ -1,4 +1,4 @@
-import 'package:daily_activity/page/index_page.dart';
+import 'package:daily_activity/page/index.dart';
 import 'package:daily_activity/page/mata_kuliah.dart';
 
 import 'package:flutter/material.dart';
@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IndexPage(),
+      home: Index(),
     );
   }
 }
-

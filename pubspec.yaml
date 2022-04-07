@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.1
+  date_picker_timeline:
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to

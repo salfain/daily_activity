@@ -1,4 +1,5 @@
-import 'package:daily_activity/page/index.dart';
+import 'package:daily_activity/page/fix_page.dart';
+
 import 'package:daily_activity/page/mata_kuliah.dart';
 
 import 'package:flutter/material.dart';
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Index(),
+      home: FixPage(),
     );
   }
 }

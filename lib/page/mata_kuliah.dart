@@ -1,4 +1,4 @@
-import 'package:daily_activity/page/index.dart';
+import 'package:daily_activity/page/fix_page.dart';
 import 'package:daily_activity/widgets/dosen_data.dart';
 import 'package:daily_activity/widgets/list_materi.dart';
 import 'package:flutter/material.dart';
@@ -18,17 +18,17 @@ class _MataKuliahState extends State<MataKuliah> {
       appBar: AppBar(
         backgroundColor: const Color(0xff2995B2),
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Belajar CNNA",
           style: TextStyle(fontFamily: "Montserrat"),
         ),
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).push(new MaterialPageRoute(
-                builder: (BuildContext context) => new Index()));
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (BuildContext context) => const FixPage()));
             //udah bisa
           },
-          icon: Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(Icons.arrow_back_ios_new),
         ),
         // actions: [
         //   IconButton(
@@ -38,7 +38,7 @@ class _MataKuliahState extends State<MataKuliah> {
         // ],
       ),
       body: ListView(
-        children: [
+        children: const [
           dosenData(),
           SizedBox(
             height: 30,

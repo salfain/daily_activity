@@ -18,7 +18,7 @@ class listMateri extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
               blurRadius: 10, offset: Offset(2, 2), color: Colors.black38),
           BoxShadow(
@@ -32,7 +32,7 @@ class listMateri extends StatelessWidget {
             child: Container(
               height: 33,
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xFffDB515),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(8),
@@ -40,19 +40,20 @@ class listMateri extends StatelessWidget {
                 ),
               ),
               child: Container(
-                margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+                margin: const EdgeInsets.only(
+                    left: 10, right: 10, top: 5, bottom: 5),
                 child: Row(
                   children: [
                     Text(
                       name,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 15,
                           fontFamily: 'Montserrat',
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
                     Expanded(child: Container()),
-                    Text(
+                    const Text(
                       "4/4",
                       style: TextStyle(
                           fontSize: 15,
@@ -66,25 +67,25 @@ class listMateri extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(top: 5, left: 5, right: 5),
-            margin: EdgeInsets.only(left: 6, right: 6),
+            padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 6, right: 6),
             height: 33,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               // border: Border.all(color: Colors.black),
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.video_call_sharp,
                   size: 25,
                   color: Color(0xff127793),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 19,
                 ),
-                Text(
+                const Text(
                   "Virtual meet",
                   style: TextStyle(
                       fontSize: 15,
@@ -92,7 +93,7 @@ class listMateri extends StatelessWidget {
                       color: Color(0xff127793)),
                 ),
                 Expanded(child: Container()),
-                Icon(
+                const Icon(
                   Icons.check_box_outlined,
                   color: Color(0xff127793),
                   size: 25,
@@ -100,33 +101,33 @@ class listMateri extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Color(0xf2C4C4C4),
             thickness: 1,
             indent: 5,
             endIndent: 5,
           ),
           Container(
-            padding: EdgeInsets.only(top: 5, left: 5, right: 5),
-            margin: EdgeInsets.only(left: 6, right: 6),
+            padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 6, right: 6),
             height: 33,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               //border: Border.symmetric(horizontal: BorderSide.none)
               // border: Border.all(color: Colors.black),
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.video_library,
                   size: 25,
                   color: Color(0xff127793),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 19,
                 ),
-                Text(
+                const Text(
                   "materi video",
                   style: TextStyle(
                       fontSize: 15,
@@ -134,7 +135,7 @@ class listMateri extends StatelessWidget {
                       color: Color(0xff127793)),
                 ),
                 Expanded(child: Container()),
-                Icon(
+                const Icon(
                   Icons.check_box_outlined,
                   color: Color(0xff127793),
                   size: 25,
@@ -142,32 +143,32 @@ class listMateri extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Color(0xf2C4C4C4),
             thickness: 1,
             indent: 5,
             endIndent: 5,
           ),
           Container(
-            padding: EdgeInsets.only(top: 5, left: 5, right: 5),
-            margin: EdgeInsets.only(left: 6, right: 6),
+            padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 6, right: 6),
             height: 33,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               // border: Border.all(color: Colors.black),
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.question_answer,
                   size: 25,
                   color: Color(0xff127793),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 19,
                 ),
-                Text(
+                const Text(
                   "Forum diskusi",
                   style: TextStyle(
                       fontSize: 15,
@@ -175,7 +176,7 @@ class listMateri extends StatelessWidget {
                       color: Color(0xff127793)),
                 ),
                 Expanded(child: Container()),
-                Icon(
+                const Icon(
                   Icons.check_box_outlined,
                   color: Color(0xff127793),
                   size: 25,
@@ -183,32 +184,32 @@ class listMateri extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Color(0xf2C4C4C4),
             thickness: 1,
             indent: 5,
             endIndent: 5,
           ),
           Container(
-            padding: EdgeInsets.only(top: 5, left: 5, right: 5),
-            margin: EdgeInsets.only(left: 6, right: 6),
+            padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 6, right: 6),
             height: 33,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               // border: Border.all(color: Colors.black),
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.queue,
                   size: 25,
                   color: Color(0xff127793),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 19,
                 ),
-                Text(
+                const Text(
                   "quiz harian",
                   style: TextStyle(
                       fontSize: 15,
@@ -216,7 +217,7 @@ class listMateri extends StatelessWidget {
                       color: Color(0xff127793)),
                 ),
                 Expanded(child: Container()),
-                Icon(
+                const Icon(
                   Icons.check_box_outlined,
                   color: Color(0xff127793),
                   size: 25,
@@ -224,7 +225,7 @@ class listMateri extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Color(0xf2C4C4C4),
             thickness: 1,
             indent: 5,

@@ -10,11 +10,12 @@ class dosenData extends StatelessWidget {
     return Container(
       height: 80,
       width: MediaQuery.of(context).size.width,
-      margin: EdgeInsets.only(left: 15, right: 15, top: 20),
+      margin: const EdgeInsets.only(left: 15, right: 15, top: 20),
+      //belom responsifs
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
               blurRadius: 10, offset: Offset(2, 2), color: Colors.black38),
           BoxShadow(
@@ -22,7 +23,7 @@ class dosenData extends StatelessWidget {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             margin: EdgeInsets.only(left: 6),

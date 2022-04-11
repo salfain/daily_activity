@@ -1,5 +1,7 @@
+import 'package:daily_activity/page/mata_kuliah.dart';
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Index extends StatelessWidget {
   // List<String> today = [
@@ -66,29 +68,19 @@ class Index extends StatelessWidget {
               child: Container(
                 height: size.height,
                 width: size.width,
-                color: Colors.white,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(30),
+                  ),
+                ),
                 child: Column(
                   children: [
                     Container(
-                      color: Colors.white,
                       height: 50,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          Container(
-                            margin: EdgeInsets.all(10.0),
-                            child: Text(
-                              "Tugas Kuliah",
-                              style: TextStyle(fontFamily: "Montserrat"),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(10.0),
-                            child: Text(
-                              "Tugas Kuliah",
-                              style: TextStyle(fontFamily: "Montserrat"),
-                            ),
-                          ),
                           Container(
                             margin: EdgeInsets.all(10.0),
                             child: Text(
@@ -199,7 +191,7 @@ class Index extends StatelessWidget {
                                         ),
                                       ),
                                       Container(
-                                        padding: EdgeInsets.only(),
+                                        padding: const EdgeInsets.only(),
                                         child: Text(
                                           "Dosen : Dr. Joko Tantular",
                                           style: TextStyle(
@@ -212,33 +204,50 @@ class Index extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        margin:
-                                            EdgeInsets.only(left: 30, top: 33),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(10),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Container(
+                                          height: 25,
+                                          width: 102,
+                                          padding: const EdgeInsets.all(5),
+                                          // margin: const EdgeInsets.only(
+                                          //     left: 70, top: 33),
+                                          decoration: const BoxDecoration(
+                                            color: Color(0xff127793),
+                                            borderRadius: BorderRadius.all(
+                                              Radius.circular(10),
+                                            ),
+                                          ),
+                                          child: Material(
+                                            color: Colors.transparent,
+                                            child: InkWell(
+                                              onTap: () {
+                                                Navigator.of(context).push(
+                                                    new MaterialPageRoute(
+                                                        builder: (BuildContext
+                                                                context) =>
+                                                            new MataKuliah()));
+                                                //udah bisa
+                                              },
+                                              child: const Center(
+                                                child: Text(
+                                                  "Detail Kelas",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontFamily: "Montserrat",
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      fontSize: 12),
+                                                  //textAlign: TextAlign.center,
+                                                ),
+                                              ),
+                                            ),
                                           ),
                                         ),
-                                        child: Text(
-                                          "Detail Kelas",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontFamily: "Montserrat",
-                                              fontWeight: FontWeight.normal,
-                                              fontSize: 12),
-                                          //textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),

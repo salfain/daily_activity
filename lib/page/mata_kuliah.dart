@@ -1,3 +1,4 @@
+import 'package:daily_activity/page/index.dart';
 import 'package:daily_activity/widgets/dosen_data.dart';
 import 'package:daily_activity/widgets/list_materi.dart';
 import 'package:flutter/material.dart';
@@ -15,14 +16,18 @@ class _MataKuliahState extends State<MataKuliah> {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        backgroundColor: Color(0xff2995B2),
+        backgroundColor: const Color(0xff2995B2),
         centerTitle: true,
         title: Text(
           "Belajar CNNA",
           style: TextStyle(fontFamily: "Montserrat"),
         ),
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => new Index()));
+            //udah bisa
+          },
           icon: Icon(Icons.arrow_back_ios_new),
         ),
         // actions: [

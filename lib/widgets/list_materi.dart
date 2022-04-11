@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 class listMateri extends StatelessWidget {
   //final List<String> judul = ["Pengenalan CNNA", "Cara kerja CNNA", "APA YA"];
 
+  // ignore: prefer_typing_uninitialized_variables
   final name;
 
-  listMateri({required this.name});
+  // ignore: use_key_in_widget_constructors
+  const listMateri({required this.name});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 236,
       width: MediaQuery.of(context).size.width,
-      margin: EdgeInsets.only(left: 15, right: 15),
+      margin: const EdgeInsets.only(left: 15, right: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),

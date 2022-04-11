@@ -211,7 +211,35 @@ class Index extends StatelessWidget {
                                         ),
                                       ),
                                     ],
-                                  )
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.all(5),
+                                        margin:
+                                            EdgeInsets.only(left: 30, top: 33),
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          ),
+                                        ),
+                                        child: Text(
+                                          "Detail Kelas",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontFamily: "Montserrat",
+                                              fontWeight: FontWeight.normal,
+                                              fontSize: 12),
+                                          //textAlign: TextAlign.center,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             ),
